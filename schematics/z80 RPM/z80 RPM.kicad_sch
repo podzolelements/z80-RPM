@@ -9956,10 +9956,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0ff18fe7-edfc-4bec-befa-1e54288af64d")
 		(property "Reference" "J5"
-			(at 271.78 113.0299 0)
+			(at 267.97 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9974,6 +9973,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
@@ -10224,10 +10224,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1afff99b-c936-43e0-ae64-e37a97964731")
 		(property "Reference" "J10"
-			(at 279.4 102.8699 0)
+			(at 275.082 98.044 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10242,6 +10241,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
@@ -10300,14 +10300,14 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1b912b78-7704-4dd2-a262-d1540ddf1cd4")
 		(property "Reference" "J12"
-			(at 269.24 132.08 90)
+			(at 261.112 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x08"
@@ -10316,6 +10316,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
@@ -11097,10 +11098,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "51bbcc5c-cbbb-4379-8c07-2c33c993887c")
 		(property "Reference" "J4"
-			(at 271.78 102.8699 0)
+			(at 267.97 98.044 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11115,6 +11115,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
@@ -11243,10 +11244,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "595530b9-0e51-4f96-9515-2079f98baefa")
 		(property "Reference" "J9"
-			(at 279.4 85.0899 0)
+			(at 275.844 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11261,6 +11261,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
@@ -11839,14 +11840,14 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6fc1128e-ad38-4a6a-a1ab-de951c7f30c6")
 		(property "Reference" "J2"
-			(at 261.62 132.08 90)
+			(at 254 120.904 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x08"
@@ -11855,6 +11856,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
@@ -12637,7 +12639,7 @@
 		(dnp no)
 		(uuid "a22bea7e-3916-437c-b491-0598e132e56b")
 		(property "Reference" "J3"
-			(at 245.11 95.2499 0)
+			(at 241.3 75.184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12652,6 +12654,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical"
@@ -13465,7 +13468,7 @@
 		(dnp no)
 		(uuid "c91cfa86-6389-4866-b04a-d285f5aa5a81")
 		(property "Reference" "J7"
-			(at 264.16 50.7999 0)
+			(at 261.62 48.514 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13480,6 +13483,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
@@ -13952,10 +13956,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d3352fcd-2f11-43b4-b228-3afd19814a9f")
 		(property "Reference" "J11"
-			(at 279.4 113.0299 0)
+			(at 275.082 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13970,6 +13973,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
@@ -14022,10 +14026,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d3d8d8a8-edac-47e0-9d36-99751daf6e37")
 		(property "Reference" "J6"
-			(at 271.78 85.0899 0)
+			(at 267.97 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14040,6 +14043,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
@@ -14112,7 +14116,7 @@
 		(dnp no)
 		(uuid "d5ac43a3-f37c-4fac-8044-14402b6a6246")
 		(property "Reference" "J8"
-			(at 252.73 95.2499 0)
+			(at 248.92 75.184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14127,6 +14131,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical"
@@ -14814,7 +14819,7 @@
 		(dnp no)
 		(uuid "fb5562e9-d0da-486f-9899-b195d439254b")
 		(property "Reference" "J1"
-			(at 255.27 50.7999 0)
+			(at 252.984 48.514 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14829,6 +14834,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
