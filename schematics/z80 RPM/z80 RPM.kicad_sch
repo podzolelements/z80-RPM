@@ -10,8 +10,8 @@
 		(rev "1")
 		(company "podzolelements@gmail.com")
 		(comment 1 "If you find this project useful or interesting, I'd love to hear about it!")
-		(comment 2 "but comes with absolutely NO WARRANTY of any kind")
-		(comment 3 "This is open source hardware and can be used for any purpose, ")
+		(comment 2 "with the GPLv3, but comes with absolutely NO WARRANTY of any kind")
+		(comment 3 "This is open source hardware and can be used for any purpose in compliance")
 		(comment 4 "The z80 Rapid Protoyping Module: An arduino-style board based on the z80")
 	)
 	(lib_symbols
