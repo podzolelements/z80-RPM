@@ -1,4 +1,4 @@
-﻿# The z80 Rapid Prototyping Module
+﻿# The z80 Rapid Prototyping Module v1.1
 
 ---
 
@@ -28,6 +28,8 @@ The z80 RPM is a credit-card sized single board computer designed for prototypin
 
 - Entirety of the z80's pins are accessible and labeled via breakout
 
+![image info](./images/kicad-pcb.png)
+
 # Memory & IO Address Map
 
 56k/8k memory configuration:
@@ -44,29 +46,31 @@ The z80 RPM is a credit-card sized single board computer designed for prototypin
 
 32k/32k memory configuration:
 
-- ROM: 0x0000 - 0x8fff
+- ROM: 0x0000 - 0x7fff
 
 - RAM: 0x8000 - 0xffff
 
 IO map:
 
-- 0b000xxxxxx: IO device select 0
+- 0b000xxxxx: IO device select 0
 
-- 0b001xxxxxx: IO device select 1
+- 0b001xxxxx: IO device select 1
 
-- 0b010xxxxxx: IO device select 2
+- 0b010xxxxx: IO device select 2
 
-- 0b011xxxxxx: IO device select 3
+- 0b011xxxxx: IO device select 3
 
-- 0b100xxxxxx: IO device select 4
+- 0b100xxxxx: IO device select 4
 
-- 0b101xxxxxx: IO device select 5
+- 0b101xxxxx: IO device select 5
 
-- 0b110xxxxxx: IO device select 6
+- 0b110xxxxx: IO device select 6
 
-- 0b111xxxxxx: IO device select 7
+- 0b111xxxxx: IO device select 7
 
 # Pinout
+
+*Note this is the board layout from v1.0, however the pin locations have not changed*
 
 ![image info](./images/labels.png)
 
@@ -88,35 +92,36 @@ Going clockwise starting from the top:
 
 Some notes: Red and Black are +5v and GND respectively. Due to limited space on the board, the IO device select lines are not labeled. IO device 0 is at the top, device 1 is below device 0, etc, and device 7 is on the bottom, right above the lower +5v connection.
 
+# Schematic
+
+A PDF version is also available in the schematics folder.
+
+![image info](./schematics/z80%20RPM.jpg)
+
 # Bill of Materials
 
-If you'd like to recreate this project, here are all the parts on the PCB. Other parts likely can be substituted in, but be sure to check with the datasheets to ensure they are actually compatible. As a side note, I socket all of my IC's, which allows the removal of the IC's from the board, but they are not absolutly necessary.
+If you'd like to recreate this project, here are all the parts on the PCB. Other parts likely can be substituted in, but be sure to check with the datasheets to ensure they are actually compatible. As a side note, I socket all of my IC's, which allows the removal of the IC's from the board, but they are not absolutely necessary.
 
-| Part Reference    | Value                  | Purpose                            |
-| ----------------- | ---------------------- | ---------------------------------- |
-| C2,C3,C4,C5,C6,C7 | .1uF                   | Decoupling capacitors              |
-| C1                | .1uF                   | Automatic reset circuit            |
-| D1                | 1N40001                | Automatic reset circuit            |
-| R1                | 10k                    | Automatic reset circuit            |
-| R2                | 100                    | Automatic reset circuit            |
-| RN1               | 10k                    | Pullup resistors on z80 input pins |
-| SW1               | Tactile switch         | Manual reset button                |
-| U1                | Z84C00AB               | z80 CPU                            |
-| U2                | 27C512 (ZIF 28 socket) | 64k EEPROM                         |
-| U4                | 74LS138                | 8 IO device select pins            |
-| U5                | 74LS32                 | Memory configuration logic         |
-| U6                | 24M512                 | 64k SRAM                           |
-| X1                | DIP 14 oscillator can  | CPU clock                          |
-
-# Known hardware issues in v1.0
-
-As this is the first hardware revision of this design, there are a couple of issues to be aware of. These exist in v1.0, and will be fixed in the v1.1 design.
-
-- Memory select jumpers are missing pulldown resistors. Without the pulldowns, the 74LS32's inputs are left floating when the memory configuration jumpers are not connected. This causes only the 56k/8k memory mode to work properly without adding on 2 pulldown resistors.
-
-- Generated gerber files are incorrect. I forgot to save when I initially generated the gerbers, causing the silkscreen to be a messed up older version.
+| Part Reference    | Value                  | Purpose                        |
+| ----------------- | ---------------------- | ------------------------------ |
+| C2,C3,C4,C5,C6,C7 | .1uF                   | Decoupling capacitors          |
+| C1                | .1uF                   | Automatic reset circuit        |
+| D1                | 1N40001                | Automatic reset circuit        |
+| R1                | 10k                    | Automatic reset circuit        |
+| R2                | 100                    | Automatic reset circuit        |
+| R3,R4             | 2k                     | Memory configuration pulldowns |
+| RN1               | 10k                    | z80 input pin pullups          |
+| SW1               | Tactile switch         | Manual reset button            |
+| U1                | 27C512 (ZIF 28 socket) | 64k EEPROM                     |
+| U2                | 24M512                 | 64k SRAM                       |
+| U3                | z80 CPU                | CPU                            |
+| U4                | 74LS32                 | Memory configuration logic     |
+| U5                | 74LS138                | IO device port decoder         |
+| X1                | DIP 14 oscillator can  | CPU clock                      |
 
 # Images
+
+*Note all images are from v1.0*
 
 Here's the RPM in action (I've got it hooked up to an SAA1099 here):
 
